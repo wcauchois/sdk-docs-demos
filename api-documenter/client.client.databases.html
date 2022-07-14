@@ -137,7 +137,13 @@ href="./client.client.databases.html">databases</a></p>
 <h2 id="client.databases-property">Client.databases property</h2>
 <p><b>Signature:</b></p>
 <div class="sourceCode" id="cb1"><pre
-class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">readonly</span> databases<span class="op">:</span> DatabaseEndpoints<span class="op">;</span></span></code></pre></div>
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">readonly</span> databases<span class="op">:</span> {</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>        list<span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>ListDatabasesParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>ListDatabasesResponse<span class="op">&gt;;</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        retrieve<span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>GetDatabaseParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>GetDatabaseResponse<span class="op">&gt;;</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        query<span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>QueryDatabaseParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>QueryDatabaseResponse<span class="op">&gt;;</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        create<span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>CreateDatabaseParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>CreateDatabaseResponse<span class="op">&gt;;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>        update<span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>UpdateDatabaseParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>UpdateDatabaseResponse<span class="op">&gt;;</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span></code></pre></div>
 </article>
 </body>
 </html>
