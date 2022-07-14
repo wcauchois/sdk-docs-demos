@@ -88,19 +88,46 @@ data-cites="notionhq/client">@notionhq/client</span></a></p>
 possible values are in <code>APIErrorCode</code>.</td>
 </tr>
 <tr class="even">
+<td><a
+href="./client.blockchildrenendpoints.html">BlockChildrenEndpoints</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.blockendpoints.html">BlockEndpoints</a></td>
+<td></td>
+</tr>
+<tr class="even">
 <td><a href="./client.client.html">Client</a></td>
+<td>The Notion API client. Construct with authentication to use the
+Notion API.</td>
+</tr>
+<tr class="odd">
+<td><a href="./client.databaseendpoints.html">DatabaseEndpoints</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.pageendpoints.html">PageEndpoints</a></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><a
+href="./client.pagepropertyendpoints.html">PagePropertyEndpoints</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
 href="./client.requesttimeouterror.html">RequestTimeoutError</a></td>
 <td>Error thrown by the client if a request times out.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a
 href="./client.unknownhttpresponseerror.html">UnknownHTTPResponseError</a></td>
 <td>Error thrown if an API call responds with an unknown error code, or
 does not respond with a property-formatted error.</td>
+</tr>
+<tr class="even">
+<td><a href="./client.userendpoints.html">UserEndpoints</a></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -201,6 +228,90 @@ API.</td>
 </tr>
 </tbody>
 </table>
+<h2 id="variables">Variables</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a
+href="./client.appendblockchildren.html">appendBlockChildren</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.createdatabase.html">createDatabase</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.createpage.html">createPage</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.deleteblock.html">deleteBlock</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.getblock.html">getBlock</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.getdatabase.html">getDatabase</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.getpage.html">getPage</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.getpageproperty.html">getPageProperty</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.getself.html">getSelf</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.getuser.html">getUser</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.listblockchildren.html">listBlockChildren</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.listdatabases.html">listDatabases</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.listusers.html">listUsers</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.querydatabase.html">queryDatabase</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.search.html">search</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.updateblock.html">updateBlock</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.updatedatabase.html">updateDatabase</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.updatepage.html">updatePage</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="type-aliases">Type Aliases</h2>
 <table>
 <colgroup>
@@ -215,13 +326,533 @@ API.</td>
 </thead>
 <tbody>
 <tr class="odd">
+<td><a
+href="./client.appendblockchildrenparameters.html">AppendBlockChildrenParameters</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.appendblockchildrenresponse.html">AppendBlockChildrenResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.audioblockobjectresponse.html">AudioBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.blockobjectresponse.html">BlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.bookmarkblockobjectresponse.html">BookmarkBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.botuserobjectresponse.html">BotUserObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.breadcrumbblockobjectresponse.html">BreadcrumbBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.bulletedlistitemblockobjectresponse.html">BulletedListItemBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.calloutblockobjectresponse.html">CalloutBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.checkboxpropertyitemobjectresponse.html">CheckboxPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.childdatabaseblockobjectresponse.html">ChildDatabaseBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.childpageblockobjectresponse.html">ChildPageBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.codeblockobjectresponse.html">CodeBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.columnblockobjectresponse.html">ColumnBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.columnlistblockobjectresponse.html">ColumnListBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.createdatabaseparameters.html">CreateDatabaseParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.createdatabaseresponse.html">CreateDatabaseResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.createdbypropertyitemobjectresponse.html">CreatedByPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.createdtimepropertyitemobjectresponse.html">CreatedTimePropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.createpageparameters.html">CreatePageParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.createpageresponse.html">CreatePageResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.databaseobjectresponse.html">DatabaseObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.datepropertyitemobjectresponse.html">DatePropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.deleteblockparameters.html">DeleteBlockParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.deleteblockresponse.html">DeleteBlockResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.dividerblockobjectresponse.html">DividerBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.emailpropertyitemobjectresponse.html">EmailPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.embedblockobjectresponse.html">EmbedBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.equationblockobjectresponse.html">EquationBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.equationrichtextitemresponse.html">EquationRichTextItemResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.fileblockobjectresponse.html">FileBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.filespropertyitemobjectresponse.html">FilesPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.formulapropertyitemobjectresponse.html">FormulaPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.getblockparameters.html">GetBlockParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.getblockresponse.html">GetBlockResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.getdatabaseparameters.html">GetDatabaseParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.getdatabaseresponse.html">GetDatabaseResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.getpageparameters.html">GetPageParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.getpagepropertyparameters.html">GetPagePropertyParameters</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.getpagepropertyresponse.html">GetPagePropertyResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.getpageresponse.html">GetPageResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.getselfparameters.html">GetSelfParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.getselfresponse.html">GetSelfResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.getuserparameters.html">GetUserParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.getuserresponse.html">GetUserResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.heading1blockobjectresponse.html">Heading1BlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.heading2blockobjectresponse.html">Heading2BlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.heading3blockobjectresponse.html">Heading3BlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.imageblockobjectresponse.html">ImageBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.lasteditedbypropertyitemobjectresponse.html">LastEditedByPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.lasteditedtimepropertyitemobjectresponse.html">LastEditedTimePropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.linkpreviewblockobjectresponse.html">LinkPreviewBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.linktopageblockobjectresponse.html">LinkToPageBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.listblockchildrenparameters.html">ListBlockChildrenParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.listblockchildrenresponse.html">ListBlockChildrenResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.listdatabasesparameters.html">ListDatabasesParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.listdatabasesresponse.html">ListDatabasesResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.listusersparameters.html">ListUsersParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.listusersresponse.html">ListUsersResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.mentionrichtextitemresponse.html">MentionRichTextItemResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.multiselectpropertyitemobjectresponse.html">MultiSelectPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
 <td><a href="./client.notionclienterror.html">NotionClientError</a></td>
 <td>Error type that encompasses all the kinds of errors that the Notion
 client will throw.</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td><a href="./client.notionerrorcode.html">NotionErrorCode</a></td>
 <td>Error codes on errors thrown by the <code>Client</code>.</td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.numberedlistitemblockobjectresponse.html">NumberedListItemBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.numberpropertyitemobjectresponse.html">NumberPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.pageobjectresponse.html">PageObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.paragraphblockobjectresponse.html">ParagraphBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.partialblockobjectresponse.html">PartialBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.partialdatabaseobjectresponse.html">PartialDatabaseObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.partialpageobjectresponse.html">PartialPageObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.partialuserobjectresponse.html">PartialUserObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.pdfblockobjectresponse.html">PdfBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.peoplepropertyitemobjectresponse.html">PeoplePropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.personuserobjectresponse.html">PersonUserObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.phonenumberpropertyitemobjectresponse.html">PhoneNumberPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.propertyitemlistresponse.html">PropertyItemListResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.propertyitemobjectresponse.html">PropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.propertyitempropertyitemlistresponse.html">PropertyItemPropertyItemListResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.querydatabaseparameters.html">QueryDatabaseParameters</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.querydatabaseresponse.html">QueryDatabaseResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.quoteblockobjectresponse.html">QuoteBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.relationpropertyitemobjectresponse.html">RelationPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.richtextitemresponse.html">RichTextItemResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.richtextpropertyitemobjectresponse.html">RichTextPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.rolluppropertyitemobjectresponse.html">RollupPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a href="./client.searchparameters.html">SearchParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a href="./client.searchresponse.html">SearchResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.selectpropertyitemobjectresponse.html">SelectPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.statuspropertyitemobjectresponse.html">StatusPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.syncedblockblockobjectresponse.html">SyncedBlockBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.tableblockobjectresponse.html">TableBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.tableofcontentsblockobjectresponse.html">TableOfContentsBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.tablerowblockobjectresponse.html">TableRowBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.templateblockobjectresponse.html">TemplateBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.textrichtextitemresponse.html">TextRichTextItemResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.titlepropertyitemobjectresponse.html">TitlePropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.todoblockobjectresponse.html">ToDoBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.toggleblockobjectresponse.html">ToggleBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.unsupportedblockobjectresponse.html">UnsupportedBlockObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.updateblockparameters.html">UpdateBlockParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.updateblockresponse.html">UpdateBlockResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.updatedatabaseparameters.html">UpdateDatabaseParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.updatedatabaseresponse.html">UpdateDatabaseResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.updatepageparameters.html">UpdatePageParameters</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.updatepageresponse.html">UpdatePageResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.urlpropertyitemobjectresponse.html">UrlPropertyItemObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><a
+href="./client.userobjectresponse.html">UserObjectResponse</a></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><a
+href="./client.videoblockobjectresponse.html">VideoBlockObjectResponse</a></td>
+<td></td>
 </tr>
 </tbody>
 </table>

@@ -134,6 +134,8 @@ class="citation"
 data-cites="notionhq/client">@notionhq/client</span></a> &gt; <a
 href="./client.client.html">Client</a></p>
 <h2 id="client-class">Client class</h2>
+<p>The Notion API client. Construct with authentication to use the
+Notion API.</p>
 <p><b>Signature:</b></p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">export</span> <span class="im">default</span> <span class="kw">class</span> Client </span></code></pre></div>
@@ -180,31 +182,13 @@ href="./client.client._constructor_.html">(constructor)(options)</a></td>
 <tr class="odd">
 <td><a href="./client.client.blocks.html">blocks</a></td>
 <td><code>readonly</code></td>
-<td>{ retrieve: (args: WithAuth&lt;GetBlockParameters&gt;) =&gt;
-Promise&lt;GetBlockResponse&gt;; update: (args:
-WithAuth&lt;UpdateBlockParameters&gt;) =&gt;
-Promise&lt;UpdateBlockResponse&gt;; delete: (args:
-WithAuth&lt;DeleteBlockParameters&gt;) =&gt;
-Promise&lt;DeleteBlockResponse&gt;; children: { append: (args:
-WithAuth&lt;AppendBlockChildrenParameters&gt;) =&gt;
-Promise&lt;AppendBlockChildrenResponse&gt;; list: (args:
-WithAuth&lt;ListBlockChildrenParameters&gt;) =&gt;
-Promise&lt;ListBlockChildrenResponse&gt;; }; }</td>
+<td><a href="./client.blockendpoints.html">BlockEndpoints</a></td>
 <td></td>
 </tr>
 <tr class="even">
 <td><a href="./client.client.databases.html">databases</a></td>
 <td><code>readonly</code></td>
-<td>{ list: (args: WithAuth&lt;ListDatabasesParameters&gt;) =&gt;
-Promise&lt;ListDatabasesResponse&gt;; retrieve: (args:
-WithAuth&lt;GetDatabaseParameters&gt;) =&gt;
-Promise&lt;GetDatabaseResponse&gt;; query: (args:
-WithAuth&lt;QueryDatabaseParameters&gt;) =&gt;
-Promise&lt;QueryDatabaseResponse&gt;; create: (args:
-WithAuth&lt;CreateDatabaseParameters&gt;) =&gt;
-Promise&lt;CreateDatabaseResponse&gt;; update: (args:
-WithAuth&lt;UpdateDatabaseParameters&gt;) =&gt;
-Promise&lt;UpdateDatabaseResponse&gt;; }</td>
+<td><a href="./client.databaseendpoints.html">DatabaseEndpoints</a></td>
 <td></td>
 </tr>
 <tr class="odd">
@@ -217,24 +201,13 @@ href="./client.client.defaultnotionversion.html">defaultNotionVersion</a></td>
 <tr class="even">
 <td><a href="./client.client.pages.html">pages</a></td>
 <td><code>readonly</code></td>
-<td>{ create: (args: WithAuth&lt;CreatePageParameters&gt;) =&gt;
-Promise&lt;CreatePageResponse&gt;; retrieve: (args:
-WithAuth&lt;GetPageParameters&gt;) =&gt; Promise&lt;GetPageResponse&gt;;
-update: (args: WithAuth&lt;UpdatePageParameters&gt;) =&gt;
-Promise&lt;UpdatePageResponse&gt;; properties: { retrieve: (args:
-WithAuth&lt;GetPagePropertyParameters&gt;) =&gt;
-Promise&lt;GetPagePropertyResponse&gt;; }; }</td>
+<td><a href="./client.pageendpoints.html">PageEndpoints</a></td>
 <td></td>
 </tr>
 <tr class="odd">
 <td><a href="./client.client.users.html">users</a></td>
 <td><code>readonly</code></td>
-<td>{ retrieve: (args: WithAuth&lt;GetUserParameters&gt;) =&gt;
-Promise&lt;GetUserResponse&gt;; list: (args:
-WithAuth&lt;ListUsersParameters&gt;) =&gt;
-Promise&lt;ListUsersResponse&gt;; me: (args:
-WithAuth&lt;GetSelfParameters&gt;) =&gt; Promise&lt;GetSelfResponse&gt;;
-}</td>
+<td><a href="./client.userendpoints.html">UserEndpoints</a></td>
 <td></td>
 </tr>
 </tbody>

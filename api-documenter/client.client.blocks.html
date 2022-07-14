@@ -137,15 +137,7 @@ href="./client.client.blocks.html">blocks</a></p>
 <h2 id="client.blocks-property">Client.blocks property</h2>
 <p><b>Signature:</b></p>
 <div class="sourceCode" id="cb1"><pre
-class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">readonly</span> blocks<span class="op">:</span> {</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>        retrieve<span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>GetBlockParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>GetBlockResponse<span class="op">&gt;;</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        update<span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>UpdateBlockParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>UpdateBlockResponse<span class="op">&gt;;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        <span class="kw">delete</span><span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>DeleteBlockParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>DeleteBlockResponse<span class="op">&gt;;</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>        children<span class="op">:</span> {</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>            append<span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>AppendBlockChildrenParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>AppendBlockChildrenResponse<span class="op">&gt;;</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>            list<span class="op">:</span> (args<span class="op">:</span> WithAuth<span class="op">&lt;</span>ListBlockChildrenParameters<span class="op">&gt;</span>) <span class="kw">=&gt;</span> <span class="bu">Promise</span><span class="op">&lt;</span>ListBlockChildrenResponse<span class="op">&gt;;</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>        }<span class="op">;</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    }<span class="op">;</span></span></code></pre></div>
+class="sourceCode typescript"><code class="sourceCode typescript"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">readonly</span> blocks<span class="op">:</span> BlockEndpoints<span class="op">;</span></span></code></pre></div>
 </article>
 </body>
 </html>
